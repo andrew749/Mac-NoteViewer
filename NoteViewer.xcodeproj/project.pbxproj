@@ -13,6 +13,10 @@
 		B04A61041D34B06800416867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04A61021D34B06800416867 /* Main.storyboard */; };
 		B04A610F1D34B06800416867 /* NoteViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04A610E1D34B06800416867 /* NoteViewerTests.swift */; };
 		B04A611A1D34B06800416867 /* NoteViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04A61191D34B06800416867 /* NoteViewerUITests.swift */; };
+		B04A61281D34BFF200416867 /* NoteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04A61271D34BFF200416867 /* NoteBuilder.swift */; };
+		B0DF6A6B1D35676600529C3A /* FileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DF6A6A1D35676600529C3A /* FileObject.swift */; };
+		B0DF6A6D1D35679B00529C3A /* MarkdownFileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DF6A6C1D35679B00529C3A /* MarkdownFileObject.swift */; };
+		B0DF6A6F1D3567AC00529C3A /* ImageFileObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0DF6A6E1D3567AC00529C3A /* ImageFileObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		B04A61151D34B06800416867 /* NoteViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NoteViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04A61191D34B06800416867 /* NoteViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewerUITests.swift; sourceTree = "<group>"; };
 		B04A611B1D34B06800416867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04A61271D34BFF200416867 /* NoteBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteBuilder.swift; sourceTree = "<group>"; };
+		B0DF6A6A1D35676600529C3A /* FileObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileObject.swift; sourceTree = "<group>"; };
+		B0DF6A6C1D35679B00529C3A /* MarkdownFileObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkdownFileObject.swift; sourceTree = "<group>"; };
+		B0DF6A6E1D3567AC00529C3A /* ImageFileObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFileObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,10 @@
 			children = (
 				B04A60FC1D34B06800416867 /* AppDelegate.swift */,
 				B04A60FE1D34B06800416867 /* ViewController.swift */,
+				B04A61271D34BFF200416867 /* NoteBuilder.swift */,
+				B0DF6A6A1D35676600529C3A /* FileObject.swift */,
+				B0DF6A6C1D35679B00529C3A /* MarkdownFileObject.swift */,
+				B0DF6A6E1D3567AC00529C3A /* ImageFileObject.swift */,
 				B04A61001D34B06800416867 /* Assets.xcassets */,
 				B04A61021D34B06800416867 /* Main.storyboard */,
 				B04A61051D34B06800416867 /* Info.plist */,
@@ -254,6 +266,10 @@
 			files = (
 				B04A60FF1D34B06800416867 /* ViewController.swift in Sources */,
 				B04A60FD1D34B06800416867 /* AppDelegate.swift in Sources */,
+				B0DF6A6F1D3567AC00529C3A /* ImageFileObject.swift in Sources */,
+				B0DF6A6B1D35676600529C3A /* FileObject.swift in Sources */,
+				B0DF6A6D1D35679B00529C3A /* MarkdownFileObject.swift in Sources */,
+				B04A61281D34BFF200416867 /* NoteBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +491,7 @@
 				B04A61201D34B06800416867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04A61211D34B06800416867 /* Build configuration list for PBXNativeTarget "NoteViewerTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +500,7 @@
 				B04A61231D34B06800416867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B04A61241D34B06800416867 /* Build configuration list for PBXNativeTarget "NoteViewerUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +509,7 @@
 				B04A61261D34B06800416867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

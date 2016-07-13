@@ -7,11 +7,14 @@
 //
 
 import Cocoa
+import Foundation
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+    }
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
@@ -20,7 +23,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
-
-
+    
+    func openDocument(sender: AnyObject) {
+        if let vc = NSApplication.sharedApplication().mainWindow?.contentViewController  as? ViewController {
+            vc.listDirectory()
+        }
+    }
+    
 }
 
