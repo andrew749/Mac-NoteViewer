@@ -15,6 +15,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     let cellIdentifier = "file_cell"
     var currentPath = ""
    
+    @IBOutlet var searchField: NSSearchField!
     @IBOutlet var webView: WebView!
    
     @IBOutlet weak var tableView: NSTableView!

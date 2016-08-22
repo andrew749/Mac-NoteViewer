@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
@@ -287,13 +287,13 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kx9-zR-hL1">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="270"/>
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="250"/>
                                 <clipView key="contentView" id="EnH-g6-Mfg">
-                                    <rect key="frame" x="1" y="0.0" width="238" height="269"/>
+                                    <rect key="frame" x="1" y="0.0" width="238" height="249"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" headerView="hqZ-T6-y5X" viewBased="YES" id="7mu-OK-bZE">
-                                            <rect key="frame" x="0.0" y="0.0" width="238" height="246"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="238" height="226"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <size key="intercellSpacing" width="3" height="2"/>
                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -316,7 +316,7 @@
                                                             <rect key="frame" x="1" y="1" width="112" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-zV-uAa">
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-zV-uAa">
                                                                     <rect key="frame" x="0.0" y="0.0" width="100" height="17"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="UgW-BH-YaE">
                                                                         <font key="font" metaFont="system"/>
@@ -328,6 +328,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="Wnt-zV-uAa" secondAttribute="trailing" constant="18" id="K2p-A3-tIg"/>
                                                                 <constraint firstItem="Wnt-zV-uAa" firstAttribute="leading" secondItem="u3o-Z1-gxA" secondAttribute="leading" constant="2" id="Kg9-Zb-Y3g"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Wnt-zV-uAa" secondAttribute="trailing" constant="14" id="WqZ-bn-3Xz"/>
                                                                 <constraint firstItem="Wnt-zV-uAa" firstAttribute="centerY" secondItem="u3o-Z1-gxA" secondAttribute="centerY" id="fG6-GP-gbE"/>
                                                             </constraints>
                                                             <connections>
@@ -341,9 +342,6 @@
                                     </subviews>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </clipView>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="bEK-Ff-fq2"/>
-                                </constraints>
                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="B40-K7-vPr">
                                     <rect key="frame" x="1" y="119" width="223" height="15"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -359,22 +357,37 @@
                             </scrollView>
                             <webView translatesAutoresizingMaskIntoConstraints="NO" id="ckk-g1-mAM">
                                 <rect key="frame" x="248" y="0.0" width="232" height="270"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="Yqy-8W-nly"/>
+                                </constraints>
                                 <webPreferences key="preferences" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0">
                                     <nil key="identifier"/>
                                 </webPreferences>
                             </webView>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UXz-lq-cUv">
+                                <rect key="frame" x="0.0" y="248" width="240" height="22"/>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="QNh-wx-Bbq">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                            </searchField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Kx9-zR-hL1" secondAttribute="bottom" id="Qp5-EJ-XlT"/>
-                            <constraint firstAttribute="trailing" secondItem="ckk-g1-mAM" secondAttribute="trailing" id="TWE-nj-Tew"/>
-                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="top" secondItem="ckk-g1-mAM" secondAttribute="top" id="aBj-Wk-E1R"/>
-                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="aSJ-ZR-d7L"/>
-                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="f7m-F1-Zp1"/>
-                            <constraint firstItem="ckk-g1-mAM" firstAttribute="leading" secondItem="Kx9-zR-hL1" secondAttribute="trailing" constant="8" symbolic="YES" id="j4u-f9-Cgb"/>
-                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="bottom" secondItem="ckk-g1-mAM" secondAttribute="bottom" id="rrg-nx-K4Q"/>
+                            <constraint firstItem="UXz-lq-cUv" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="6Z2-jC-4wX"/>
+                            <constraint firstItem="UXz-lq-cUv" firstAttribute="top" secondItem="ckk-g1-mAM" secondAttribute="top" id="Buk-LY-bxS"/>
+                            <constraint firstItem="UXz-lq-cUv" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="HZA-w5-4b6"/>
+                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" symbolic="YES" id="PEt-oF-rlD"/>
+                            <constraint firstItem="ckk-g1-mAM" firstAttribute="leading" secondItem="UXz-lq-cUv" secondAttribute="trailing" constant="8" symbolic="YES" id="Zx2-mD-FuX"/>
+                            <constraint firstItem="UXz-lq-cUv" firstAttribute="leading" secondItem="Kx9-zR-hL1" secondAttribute="leading" id="Zyt-js-O3r"/>
+                            <constraint firstAttribute="bottom" secondItem="Kx9-zR-hL1" secondAttribute="bottom" id="e8n-RS-rXF"/>
+                            <constraint firstItem="ckk-g1-mAM" firstAttribute="leading" secondItem="Kx9-zR-hL1" secondAttribute="trailing" constant="8" symbolic="YES" id="ij4-Ws-eQf"/>
+                            <constraint firstItem="Kx9-zR-hL1" firstAttribute="bottom" secondItem="ckk-g1-mAM" secondAttribute="bottom" id="qlp-PM-eMe"/>
+                            <constraint firstAttribute="trailing" secondItem="ckk-g1-mAM" secondAttribute="trailing" id="tPk-vv-f3A"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchField" destination="UXz-lq-cUv" id="H34-fb-sDQ"/>
                         <outlet property="tableView" destination="7mu-OK-bZE" id="YQH-RC-4We"/>
                         <outlet property="webView" destination="ckk-g1-mAM" id="6Lm-V2-BIy"/>
                     </connections>

@@ -8,6 +8,8 @@
 
 import Foundation
 
+// ABC
 class FileObject {
-    func containsString(string:String) -> Bool { return false }
+    func hasWord(query:String) -> Bool { return false }
+    func getMatchingIndices(query:String) -> [PageIndex] { return  [] }
 }
